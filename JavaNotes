@@ -1,0 +1,51 @@
+
+Variable
+============
+Variable is name of storage location where we can store data
+
+Java support 3 types of variable
+1.Local
+2.Instance
+3.Static
+
+Local variable
+===================
+Variable declared inside method/block that variable is local
+
+Scope: Within method
+Memory allocated:At the time of method execution memory allocated
+Memory deallocated:After execution of method
+
+Instance Variable
+======================
+Variable declare inside the class and outside any block any method is called instance variable
+
+scope: Within Object
+Memory allocation: At the time Object creation memory allocated
+Memory deallocate: After object destroyed
+
+Note:
+----------
+Instance variable get the new memory for every new object
+
+
+static keyword
+=============
+In Java static keyword plays important role
+as static method/variable we use for memory management
+
+Static variable/class level variable
+=========================
+Variable declare inside the class and outside any block any method and declare
+with static keyword is called static variable
+
+scope: within a class
+Memory allocation: As soon as class loaded memory allocated
+Memory deallocate: After class unload
+
+Note:
+-------------
+static variable get the memory only once and same memory share with other objects
+To call static data we dont need any Object
+
+

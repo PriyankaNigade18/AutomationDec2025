@@ -8,6 +8,7 @@ public class FirstCode
 	{
 		
 		System.out.println("Hello Everyone!");
+		MethodDemo.show();
 	}
 	
 }

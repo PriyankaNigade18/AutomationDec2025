@@ -79,15 +79,33 @@ public class DataTypes {
 		System.out.println("long data is: "+l1);
 		
 		
+		System.out.println("-------Numeric-->Integral--->Floating point--------");
+		/*
+		 * Floating point
+		 * -----------------
+		 * 1.float: 4byte  after decimal point we can add almost 6 to 7 numbers
+		 * 2.double(default):8byte after decimal point we can add almost 15 to 16 numbers
+		 */
+		
+		double d1=89.67698798708098;
+		System.out.println("Double type data: "+d1);
+		
+		float f1=66.5676878F;
+		float f2=45.34F;
+		
+		System.out.println("Float type data: "+f1);
+		System.out.println("Float type data: "+f2);
 		
 		
 		
+		//save personal number/adhar card number/credit/debit card number:String type
 		
+		//long phno1=9552671595L;//8byte
 		
-		
-		
-		
-		
+		//100 students numbers
+	
+		String phno1="9552671595";
+		System.out.println(phno1);
 		
 		
 		

@@ -79,13 +79,13 @@ public class TypeCasting {
 		short s3=(short)i3;//2byte
 		System.out.println("int to short explicit conversion: "+s3);//-15536
 		
-		long l2=80989090L;
-		int k=(int) l2;
-		System.out.println("Long to int explicit conversion: "+k);
+		long l2=80989090L;//8byte
+		int k=(int) l2;//4byte
+		System.out.println("Long to int explicit conversion: "+k);//80989090
 		
 		long l3=809890908789789989L;
 		int l=(int) l3;
-		System.out.println("Long to int explicit conversion: "+l);
+		System.out.println("Long to int explicit conversion: "+l);//-1791240923
 		
 		
 		

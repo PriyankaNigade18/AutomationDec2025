@@ -100,6 +100,95 @@ public class OperatorsDemo {
 		System.out.println(h);//69
 		
 		
+		System.out.println("------Relational Operators------------");
+		/*
+		 * Test Data
+		 * -----------
+		 * m=n=101 r=h=69 c=91 d=90 u=69 v=68
+		 */
+		
+		System.out.println("Less than <: "+(r<m));//true
+		System.out.println(v<n);//true
+		System.out.println(c<r);//false
+		System.out.println("less than equal to <=: "+(h<=c));//true
+		System.out.println(r<=u);//true
+		System.out.println(m<=d);//false
+		System.out.println("Greater than >: "+(c>d));//true
+		System.out.println("Greater than equal to >=: "+(m>=n));//true
+		System.out.println(u>=d);//false
+		System.out.println("Equal to ==: "+(m==n));//true
+		System.out.println(r==u);//true
+		System.out.println(c==u);//false
+		System.out.println("Not equal to !=: "+(c!=d));//true
+		System.out.println(v!=r);//true
+		System.out.println(r!=h);//false
+		
+		
+		System.out.println("------Logical Operators-------");
+		/*
+		 * c1		c2			c1&&c2			c1||c2			!c1
+		 * ----------------------------------------------------------------
+		 * true		true		true			true			false
+		 * true		false		false			true			false
+		 * false	true		false			true			true
+		 * false 	false		false			false			true
+		 * 
+		 * Test data
+		 * --------------
+		 * true: r<m  v!=r r==u m==n
+		 * false: r!=h  m!=n u>d c==u
+		 */
+		
+		
+		System.out.println("----&&------");
+		System.out.println((r<m) && (m==n));//true
+		System.out.println((v!=r) && (c==u));//false
+		System.out.println((m!=n) && (r==u));//false
+		System.out.println((m!=n) && (c==u));//false
+		
+		System.out.println("-----||----");
+		
+		System.out.println((r<m)  || (m==n));//true
+		System.out.println((v!=r) || (c==u));//true
+		System.out.println((m!=n) || (r==u));//true
+		System.out.println((m!=n) || (c==u));//false
+		
+		System.out.println("-----!(Not)-----");
+		
+		System.out.println(m==n);//true
+		System.out.println(!(m==n));//false
+		
+		System.out.println(c==u);//false
+		System.out.println(!(c==u));//true
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		

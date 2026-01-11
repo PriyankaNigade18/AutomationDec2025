@@ -32,8 +32,14 @@ public class CompileTimeParameterPassing
 		CompileTimeParameterPassing c1=new CompileTimeParameterPassing();
 		c1.addition();
 		c1.addition();
+		/*
+		 * Compile time parameter passing
+		 * ----------------------------------
+		 * When we pass arguments(real data) at the time of calling that method is called 
+		 * compile time parameter passing
+		 */
 		
-		c1.add(500,700);
+		c1.add(500,700);//2 arguments
 		c1.add(56,70);
 
 

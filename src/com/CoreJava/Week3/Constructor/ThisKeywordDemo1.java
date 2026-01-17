@@ -16,7 +16,7 @@ public class ThisKeywordDemo1
 	public void start()
 	{
 		System.out.println("Browser start....");
-		open();
+		//open();
 		this.open();
 		
 	}
@@ -30,6 +30,7 @@ public class ThisKeywordDemo1
 	public void stop()
 	{
 		System.out.println("Browser stop");
+		
 	}
 	
 

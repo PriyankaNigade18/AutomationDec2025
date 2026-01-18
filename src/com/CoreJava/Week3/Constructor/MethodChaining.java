@@ -22,16 +22,17 @@ public class MethodChaining
 	}
 	
 	//method
-	public void stop()
+	public EmployeeData stop()
 	{
 		System.out.println("Stop Browser.....");
 		
+		return new EmployeeData();
 	}
 	
 	public static void main(String[] args) 
 	{
 		MethodChaining m1=new MethodChaining();
-		m1.start().run().stop();
+		m1.start().run().stop().show();
 		
 		//m1.start().run().stop();
 //		m1.run();

@@ -8,3 +8,9 @@ and declare one method as display() and display information for 5 Employees
 Assignment2: Method
 ----------------------------
 Design Calculator Class with 5 methods +,-,*,/,% and pass parameters at compile time.
+
+Conditional statements
+
+Assignment 3: 
+1. accept number from user and test number is positive or negative
+2. accept number and test that is number even or odd

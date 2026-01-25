@@ -48,4 +48,63 @@ Note:
 static variable get the memory only once and same memory share with other objects
 To call static data we dont need any Object
 
+======================================
+Data Structure
+=============
+Data structure is way to represent our data so that we can 
+manage and perform certain operations on that data
+
+Array/Arrays
+===============
+Arrays is predefined class in java 
+
+Array is static data structure
+Array is collection of similar type of data/Objects
+Array size is always fix size
+Array implemented in java as Object
+
+Types
+==========
+1.Single dimension array(1D)
+2.Multi dimension array(2D)
+
+Ways to declare array
+========================
+1. Using new keyword
+2. Using literal
+
+Syntax
+=============
+datatype arrayvariable_name[]=new datatype[size];
+
+Iterate array
+=============
+1.Simple for loop
+2.for each loop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -124,7 +124,7 @@ public class LoopDemo {
 		
 		
 		//accept number and do reverse the number
-		
+		/*
 		//1234===>4321
 		
 		int num=1234,rem,rev=0;
@@ -138,6 +138,84 @@ public class LoopDemo {
 		
 		
 		System.out.println("Reverse of "+temp+" is: "+rev);
+		*/
+		
+		//test number is armstrong number 153
+		
+		int num=153,rem,result=0;
+		int temp=num;
+		while(num!=0)
+		{
+			rem=num%10;
+			num=num/10;
+			result=result+rem*rem*rem;
+		}
+		
+		if(temp==result)
+		{
+			System.out.println(temp+" is an Armstrong number");
+		}else
+		{
+			System.out.println(temp+" is not an Armstrong number");
+
+		}
+		
+		System.out.println("------------------------------");
+		
+		//print hello 5 times
+		
+		int k=1;
+		do 
+		{
+			System.out.println("Hello");
+			k++;
+		}while(k<=5);
+		
+		
+		System.out.println("------------");
+		
+		int j=1;
+		do
+		{
+			System.out.println("Hi");
+			j++;
+		}while(j>=10);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		

@@ -46,6 +46,13 @@ public class Array1D_Example {
 		{
 			System.out.println(sid[i]);
 		}
+		System.out.println("-----For each loop------");
+
+		
+		for(int i:sid)
+		{
+			System.out.println(i);
+		}
 		
 		System.out.println("---------------------------");
 		
@@ -65,6 +72,12 @@ public class Array1D_Example {
 			System.out.println(area[i]);
 		}
 		
+		System.out.println("-----For each loop------");
+
+		for(String i:area)
+		{
+			System.out.println(i);
+		}
 		System.out.println("---------------------------");
 
 		double marks[]=new double[4];
@@ -82,6 +95,12 @@ public class Array1D_Example {
 			System.out.println(marks[i]);
 		}
 		
+		System.out.println("-----For each loop------");
+
+		for(double i:marks)
+		{
+			System.out.println(i);
+		}
 		System.out.println("---------------------------");
 
 		
@@ -101,7 +120,12 @@ public class Array1D_Example {
 		}
 		
 		
-		
+		System.out.println("-----For each loop------");
+
+		for(Object i:empData)
+		{
+			System.out.println(i);
+		}
 		
 		
 		

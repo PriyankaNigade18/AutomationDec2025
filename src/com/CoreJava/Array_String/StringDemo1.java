@@ -42,6 +42,23 @@ public class StringDemo1 {
 		
 		System.out.println(s2==s4);//false
 		
+		System.out.println("********************");
+		//String is an immutable class
+		
+		String s11="Hello";
+		String s12="Hello";
+		System.out.println(s11==s12);//true
+		s11=s11+"All";
+		System.out.println(s11==s12);//false
+		
+		String s13="Hello everyone";
+		s13=s13+" welcome ";
+		
+		
+		
+		
+		
+		
 		
 		
 		

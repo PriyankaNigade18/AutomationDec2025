@@ -28,6 +28,10 @@ Assignment 5:
 create two dimensional array for user credentials (like usrename and password)
 and store 5 records, iterate the same using forloop and for each loop
 
+Assignment 6:Method overloading
+===========================
+create two classes for login and testing and implement
+method overloding for amazon payment.
 
 
 

@@ -1,0 +1,98 @@
+
+
+Selenium WebDriver
+======================
+- It is an API for WebUI automation Test
+- It is an Interface
+===============================================
+-WebApplication testing tool
+-Multiple Platform: windows/mac/linux
+-Multiple browser: chrome,edge,safari,ie,opera,firefox
+-Multiple Programming languages: Java,Js,Python,C#.net,perl,php...etc
+-Easily integrate with external tools/framework(APPIUM,JIRA,JMETER...)
+-Selenium is Open Source and its free tool
+
+
+Limitations
+---------------
+We can not run
+1.Window application/Mobile application/API testing 
+2.Image can not read by selenium otp,email,barcode reader,qrcode
+3.captcha we cant automate
+
+
+Selenium Project Setup
+============================
+1.Java Project
+2.Maven Project
+
+For Java Project
+==================
+1.create java project
+2.Download Selenium jar from https://www.selenium.dev/downloads/
+3. right click on project--->Build path-->configurbuildpath--->libraries-->
+classPath--->external library--->attched seleniumserver jar-->apply & save
+
+For Maven Project
+====================
+
+What is MAven
+==================
+Maven is build and project management tool
+followed by developer and tester
+
+POM.xml
+============
+This is configuration file for maven project
+Here all required dependency and plugin we can add
+
+What is dependency?
+-------------------
+It is an executable file/library file
+
+Maven support two types of repository
+===================================
+1.Local Repo
+-----------------
+C:\Users\name\.m2\repository
+
+2.Central/ Remote repo
+-------------------------------
+https://mvnrepository.com/
+
+
+
+Selenium WebDriver Browser Commands
+======================================
+1.get(url): open application
+2.getTitle(): get the application actual title
+3.getCurrentUrl(): get the current url of application
+4.getPageSource(): get the page source of application
+
+Window Handling
+---------------
+5.getWindowHandle()
+6.getWindowHandles()
+
+7.close(): close active browser window
+8.quit(): close all open browser windows by selenium
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

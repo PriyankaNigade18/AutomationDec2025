@@ -33,6 +33,25 @@ Assignment 6:Method overloading
 create two classes for login and testing and implement
 method overloding for amazon payment.
 
+Assignment on Inheritance
+------------------------------
+Person and Student
+Create a class Person with attributes name and age.
+Create a subclass Student that adds rollNumber and marks.
+Display all details using inherited methods.
+
+
+Assignment on DataAbstraction
+-----------------------------------
+Employee Salary
+Create an abstract class Employee with an abstract method calculateSalary().
+Create subclasses FullTimeEmployee and PartTimeEmployee and implement the method.
+
+Assignment on ArrayList
+-------------------------------
+Book List
+Create a class Book with title and author.
+Store multiple books in an ArrayList and display them.
 
 
 

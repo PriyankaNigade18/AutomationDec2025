@@ -5,6 +5,7 @@ import java.util.ArrayList;
 /*
  * ArrayList is class implement List interface
  * Underline data structure is Dynamic Array
+ * Frequent operation is data retrieval
  * It is Order collection
  * Duplication allowed
  * null values allowed

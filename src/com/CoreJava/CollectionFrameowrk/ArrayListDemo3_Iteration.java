@@ -81,7 +81,7 @@ public class ArrayListDemo3_Iteration {
 		 * ---------------------------------
 		 * Collection is an interface, Collections is class and it has all static method
 		 * 
-		 */
+00..		 */
 		
 		System.out.println("------------------------");
 		
@@ -109,7 +109,8 @@ public class ArrayListDemo3_Iteration {
 		
 		
 		
-
+		
+		
 		
 		
 		

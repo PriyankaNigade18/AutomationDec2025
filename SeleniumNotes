@@ -62,6 +62,12 @@ https://mvnrepository.com/
 
 
 
+Selenium Exceptions
+=====================
+1.org.openqa.selenium.InvalidArgumentException: invalid argument
+When url address is wrong (without protocol-https)
+
+
 Selenium WebDriver Browser Commands
 ======================================
 1.get(url): open application
@@ -76,6 +82,106 @@ Window Handling
 
 7.close(): close active browser window
 8.quit(): close all open browser windows by selenium
+
+7/3/2026
+=================================================
+Navigation Commands/Methods
+===================================
+
+To navigate between application we have in Selenium Navigation interface
+
+Navigation interface provides 4 methods
+----------------------------------
+1.to(url): navigate to application 
+
+driver.navigate().to(url)
+
+2.back():Navigate back
+
+driver.navigate().back()
+
+3.forward(): Navigate forward
+
+driver.navigate().forward()
+
+4.refresh():To refresh webpage
+
+driver.navigate().refresh()
+
+
+============================================
+How to automate any webelement
+===================================
+For web application any graphical user interface(GUI) is webelement
+examples: textbox,checkbox,radiobutton,button,link.....etc
+
+In Technical WebElement is an interface in Selenium
+
+To automate any webelement 
+-----------------------
+1.Identify webelement address
+2.Perform action on webelement
+
+To identify weblement address we use in Selenium Locators
+
+What is Locator?
+--------------------
+Locator is an address of webelement from webpage
+
+Selenium Support total 8 locators
+------------------------------------
+1.By id (primary)
+2.By name
+3.By className
+4.By tagName
+5.By linkText
+6.By partialLinkText
+
+Dynamic locators
+-----------------
+7.By cssSelector
+8.By xpath
+
+--------------------------------------
+In latest selenium version4: Relative locators
+-------------------------------------------
+
+
+
+====================================================
+To Identify WebElement
+============================
+1.findElement()
+-----------------------
+- To Identify Single Webelement we use findElement()
+
+
+2.findElements()
+------------------------
+- To identify Multiple Webelements
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

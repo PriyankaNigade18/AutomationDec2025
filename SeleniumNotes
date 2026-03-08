@@ -67,6 +67,16 @@ Selenium Exceptions
 1.org.openqa.selenium.InvalidArgumentException: invalid argument
 When url address is wrong (without protocol-https)
 
+2.NoSuchElementException: no such element: Unable to locate element:
+When findElement() is not able to identify any webelement you will get this exception
+
+3.StaleElementReferenceException: stale element reference: stale element not found
+Whenever page get refresh and element is not loaded in DOM then such element is refer as stale element
+so that case you will get staleElementReferenceException
+
+4.InvalidSelectorException: Compound class names not permitted
+When we identify webelement with multiple classname then this exception will throw by selenium
+
 
 Selenium WebDriver Browser Commands
 ======================================
@@ -159,6 +169,127 @@ To Identify WebElement
 2.findElements()
 ------------------------
 - To identify Multiple Webelements
+
+
+
+======================================================
+8/3/2026
+==========
+WebElement is an interface in selenium
+
+WebElement validation method
+------------------------------
+1.isDisplayed():boolean
+2.isEnabled():boolean
+3.isSelected():boolean
+
+WebElementMethod: To get text and attribute of element
+-----------------------------------------------------
+1.getDomAttribute(attribute):return value of that attribute
+------------------------
+When we wanted to get the value of any attribute for that webelement then use this method
+
+2.getText()
+-------------------
+-To get visible text of any webelement we use getText() 
+-To get inner html text also we use getText()
+
+Actions command on WebElement
+-------------------------------
+textbox,searchbox---->type text---->sendKeys("string")
+link,button,checkbox,radiobutton--->click--->click()
+To clear any written text---->clear()
+
+
+
+How to automate any hyperlink
+-----------------------------------
+<a href="" id="" class="">link text</a>
+
+To automate any hyperlink selenium provides two locators
+1.By linkText()
+2.By partialLinkText()
+
+example:
+<a>forgotten password</a>
+
+
+1.By linkText():Full text
+-------------------------------------
+driver.findElement(By.linkText("forgotten password"));
+
+2.By partialLinkText():partial text
+---------------------------------------
+driver.findElement(By.linkText("password"));
+
+
+Synchronization Issue
+============================
+Tool always execute faster than application
+Sometimes application need extra time to load webelement and then it creates
+time mapping issue in between application and tool, that is called Synchronization issue in selenium
+
+How to handle it?
+-------------------------
+Selenium provides two dynamic waits
+
+1.Implicit Wait
+-------------------
+-Implicit wait is applicable for all webelements
+-It is called Global wait
+- Apply implicit wait after driver session creates
+
+syntax
+----------
+driver.manage().timeout().implicitlyWait(Duration.ofSeconds(10));
+
+If element needs load time is 7sec and implicit wait=10sec then 
+as this is dynamic remaining 3sec selenium will not wait it will continue with
+next element
+
+
+
+2.Explicit Wait
+-----------------------
+-Explicit wait applicable for single webelement
+-Explicit wait we can apply based on conditions
+
+	we use two classes to achieve this wait
+	1.WebDriverWait(c)
+	2.FluentWait(c)
+	
+	WebDriverWait(c) extends Fluentwait(c) implements Wait(I)
+
+==============================================
+ClassName Locator
+====================
+<input type="submit" value="Login" class="btn btn-primary" >
+
+class="btn btn-primary"
+		c1		c2
+
+InvalidSelectorException: Compound class names not permitted
+
+Solution
+-----------
+Identify unique class name from DOM
+Or
+Identify element using dynamic locators
+
+Using cssSelector for classname
+=================================
+tagname.classname
+input.btn.btn-primary
+
+==========================================
+tagName Locator
+===========================
+Scenarios
+------------
+1.Number of input boxes
+2.Number of images
+3.Number of links
+
 
 
 

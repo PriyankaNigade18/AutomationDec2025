@@ -1,0 +1,28 @@
+
+Assignment1:
+--------------------------
+open Edge browser and navigate to Orangehrm application
+	1.get the title and validate it title should be OrangeHRM 
+	2.get the current url and validate current url should have protocol https
+	3.close the browser
+
+	Use URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+-------------------------------------------------------------------------------------	
+
+Assignment2:
+----------------------------
+Open chrome browser navigate to https://www.saucedemo.com/v1/ this app 
+automate login functionality and check is user navigated in inventory page
+use url for validation
+
+Test data:
+username: standard_user
+password: secret_sauce
+
+-----------------------------------------------------------------------------
+Assignment3:
+-------------------
+Open ChromeBrowser navigate to https://www.naukri.com/ and count total links 
+available and print the same in console
+--------------------------------------------------------------------------------

@@ -164,13 +164,16 @@ To Identify WebElement
 1.findElement()
 -----------------------
 - To Identify Single Webelement we use findElement()
+- Return type of findElement() is WebElement interface object
+- If Element is not found then findElement() throws Exception: NoSuchElementException
 
 
 2.findElements()
 ------------------------
-- To identify Multiple Webelements
-
-
+- To identify Multiple Webelements we use findElements()
+- Return type of findElements() is List<WebElement>
+- If Element is not found then findElements() never throws any exception
+it return []list and size():0
 
 ======================================================
 8/3/2026
@@ -282,6 +285,9 @@ tagname.classname
 input.btn.btn-primary
 
 ==========================================
+14-03-2026
+=====================
+
 tagName Locator
 ===========================
 Scenarios
@@ -289,6 +295,207 @@ Scenarios
 1.Number of input boxes
 2.Number of images
 3.Number of links
+
+
+
+Dynamic Locators
+==================
+1.By cssSelector
+
+2.By xpath
+
+
+1.cssSelector
+========================
+What is Css?
+------------------
+Css is cascaded style sheet its language use to provide styles to webelements
+
+
+What is cssSelector?
+-----------------------------
+-cssSelector It is locator to identify WebElement based on Css Property(css id,classname,attribute)
+-CssSelector can travel in one direction(parent tag to child tag)
+-CssSelector is faster than xpath
+
+Syntax:
+-----------------
+1.tagname with id
+2.tagname with attribute
+3.tagname with className
+4.tagname with id,className,attribute
+
+
+1.tagname with id
+---------------------------
+Syntax:
+--------------
+tagname#id
+
+example:
+----------------
+<input id="email-id">
+
+input#email-id OR #email-id
+
+
+2.tagname with attribute
+--------------------------------
+Syntax:
+--------------
+tagname[attribute='value']
+
+Example
+----------------
+<input placeholder="Password" type="password">
+
+input[type='password']
+OR
+input[placeholder='Password']
+
+
+3.tagname with className
+-----------------------------
+Syntax:
+-----------
+tagname.className
+
+Example: 
+----------
+<button class="btn btn-default btn-primary">
+				c1     c2          c3	
+
+button.btn.btn-default.btn-primary
+
+OR
+
+button.btn
+
+
+4.tagname with id,className,attribute
+--------------------------------------
+Syntax:
+--------------
+tagname#id.className[attribute='value']
+
+Example:
+------------
+<button id="submit-id" type="submit" class="btn btn-default btn-primary" </button>
+
+button#submit-id.btn[type='submit']
+
+==============================================================
+CssSelector with Special symbols
+-----------------------------------------
+CssSelector does not provide any method support but cssSelector have symbols
+that we use to uniquly identify elements
+
+1.*(contains())
+--------------------------
+Based on partial element value match we can identify element
+
+Syntax:
+===============
+tagname[attribute*='partial value']
+
+<input id="twotabsearchtextbox">
+
+input[id*="searchtext"]......1 of 1
+
+2.^(starts-with())
+------------------------------
+Based on prefix value match we can identify element
+Syntax:
+===============
+tagname[attribute^='prefix value']
+
+<input id="twotabsearchtextbox">
+
+input[id^="twotab"]......1 of 1
+
+
+3.$(ends-wth())
+-------------------------
+Based on suffix value match we can identify element
+Syntax:
+===============
+tagname[attribute$='suffixvalue']
+
+<input id="twotabsearchtextbox">
+
+input[id$="box"]......1 of 1
+
+========================================
+Parent to child relation
+-----------------------------
+
+Indexing in CssSelectors
+----------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

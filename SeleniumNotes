@@ -414,7 +414,7 @@ tagname[attribute^='prefix value']
 input[id^="twotab"]......1 of 1
 
 
-3.$(ends-wth())
+3.$(ends-with())
 -------------------------
 Based on suffix value match we can identify element
 Syntax:
@@ -428,9 +428,220 @@ input[id$="box"]......1 of 1
 ========================================
 Parent to child relation
 -----------------------------
+1. parenttag childtag      : direct and indirect element
+aside a..... 1 of 13
+aside div a.....1 of 13
 
+2. parentTag>childtag	   : direct child elements
+
+div.list-group>a......1 of 13 all direct child elements
+========================================
 Indexing in CssSelectors
 ----------------------------
+parenttag>childtag:nth-child(index)
+
+div.list-group>a:nth-child(3)......out of 13 elements we are matching to 3rd one
+
+========================================================
+By xpath
+=============
+what is Xpath?
+------------------
+- xpath is path of element from its html or xml code
+- xpath identify element directly from DOM (Document object model)
+- Xpath can travel from parent to child and viceversa
+- Xpath support multiple methods
+- Xpath support axies(relations in between node)
+
+Html DOM
+-------------------
+<html>---------------root node
+<head>
+</head>
+
+<body>
+<div>
+<a>
+<input>------------element
+<button>
+
+</body>
+</html>
+====================================
+Types Of Xpath
+====================
+1.Absolute Xpath
+---------------------
+- It identify element from its root node
+- It always starts with '/'
+
+/html/body/div[2]/div/div/div/div[2]/div/form/div[1]/input
+
+2.Relative xpath
+---------------------
+- It identify webelement based on its relative property
+- It always starts with '//'
+
+//*[@id="input-email"]
+
+here * indicate all(from all the tags identify element whose id is input-email)
+
+Syntax
+==========
+//tagname[@attribute='value']
+
+
+Xpath With Operators
+============================
+1. and
+-------------
+Syntax:
+-----------
+//tagname[@attribute1='value' and @attribute2='value']
+//input[ @type='email' and @class='form-control']....1 of 1
+
+2.or
+---------------
+Syntax:
+-----------
+//tagname[@attribute1='value' or @attribute2='value']
+//input[ @type='email' or @class='form-contro']....1 of 1
+
+------------------------------------------------------------------
+Xpath with Indexing/position()
+============================
+Syntax
+==========
+(xpath)[index]
+
+OR
+
+(xpath)[position()=index]
+
+============================================================
+Xpath Methods
+=================
+1.text()
+---------------
+- based on visible text of element we can identify element 
+- text() never ignore white space
+
+Syntax
+===========
+//tagname[text()='visible text']
+
+2.normalize-space()
+---------------------------
+- based on visible text of element we can identify element 
+- normalize-space() ignore white space like trim() of string class
+
+Syntax
+===========
+//tagname[normalize-space()='visible text']
+
+3.contains():Partial match
+---------------------
+Syntax:
+==============
+//tagname[contains(@attribute,'partial value')]
+
+OR
+
+//tagname[contains(text(),'partial text')]
+
+//tagname[contains(normalize-space(),'partial text')]
+
+Example:
+---------------
+//input[contains(@id,'searchtext')]
+
+
+4.starts-with(): prefix value
+-----------------------------------
+Syntax:
+==============
+//tagname[starts-with(@attribute,'prefix value')]
+
+OR
+
+//tagname[starts-with(text(),'prefix text')]
+
+//tagname[starts-with(normalize-space(),'prefix text')]
+
+Example:
+-------------
+//input[starts-with(@id,'twotab')]
+===================================================================
+Interview question
+=======================
+1.Google serach scenario
+2.Footer automation
+3.List automation
+
+
+
+Xpath Axies
+====================
+
+
+
+Relative Locators(Selenium 4)
+=================================
+
+
+=====================================
+
+TestNG class
+----------------
+
+Dropdown Atomation
+
+Calendar Automation
+
+WebTable Automation
+
+Window Handling
+
+Alert 
+
+Frame
+
+Actions class
+
+JavascriptExecutor Interface
+hidden element
+
+Special Scenarios
+------------------------
+Svg element
+Shadow dom
+Broken links
+
+Framework
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -26,3 +26,23 @@ Assignment3:
 Open ChromeBrowser navigate to https://www.naukri.com/ and count total links 
 available and print the same in console
 --------------------------------------------------------------------------------
+Assignment 4:
+-----------------
+Automate Login and Logout functionality for Orangehrm application using only CssSelector
+Use URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+--------------------------------------------------------------------------------
+Assignment 5:
+------------------
+Automate Login and Logout functionality for SwagLab application using only CssSelector
+Use URL: https://www.saucedemo.com/v1/
+--------------------------------------------------------------------------------
+Assignment 6:
+-----------------
+Automate Login and Logout functionality for Orangehrm application using only Xpath
+Use URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+--------------------------------------------------------------------------------
+Assignment 7:
+------------------
+Automate Login and Logout functionality for SwagLab application using only Xpath
+Use URL: https://www.saucedemo.com/v1/
+--------------------------------------------------------------------------------

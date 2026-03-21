@@ -577,13 +577,96 @@ Interview question
 1.Google serach scenario
 2.Footer automation
 3.List automation
-
-
-
+===================================================================
 Xpath Axies
 ====================
+1.ancestor
+-----------------
+Syntax:
+-----------
+//tagname[@attribute='value']//ancestor::tagname of ancestor element
+
+scenario:Identify For John ancestor tagname
+//td[text()='John']//ancestor::tbody
+
+2.parent
+-----------------
+Syntax:
+-----------
+//tagname[@attribute='value']//parent::tagname of parent element
+
+scenario:Identify For John parent tagname
+//td[text()='John']//parent::tr
+
+3.child
+-----------------
+Syntax:
+-----------
+//tagname[@attribute='value']//child::tagname of child element
+
+Scenario:Identify total childs for row4
+//tbody/tr[4]/child::td.....5match
 
 
+4.following
+----------------
+Syntax:
+-----------
+//tagname[@attribute='value']//following::tagname of following element
+
+Scenario:Identify all rows after John row
+//td[text()='John']//following::tr....2
+
+5.preceding
+----------------
+Syntax:
+-----------
+//tagname[@attribute='value']//preceding::tagname of preceding element
+
+Scenario:Identify all rows Before John row
+//td[text()='John']//preceding::tr...4
+
+6.following-sibling
+-----------------------
+Syntax:
+-----------
+//tagname[@attribute='value']//following-sibling::tagname of following-sibling element
+
+Scenario: For John identify following sibling
+//td[text()='John']//following-sibling::td.....3
+
+7.preceding-sibling
+-----------------------
+Syntax:
+-----------
+//tagname[@attribute='value']//preceding-sibling::tagname of preceding-sibling element
+
+Scenario: For John identify preceding sibling
+
+//td[text()='John']//preceding-sibling::td.....1
+
+==============================================================================================
+
+<tbody>------------------Grand parent of John(Ancestor)
+		<tr>------------------Parent of John(Parent)
+ 
+         	<td>4</td>--------preceding-sibling
+
+          	<td>John</td>----------WebElement
+
+          	<td>Robinson</td>   .....1
+
+          	<td>jr5527</td>     .....2    following-sibling
+ 
+         	<td>                ......3
+              <a href="user.html"><i class="icon-pencil"></i></a>
+              <a role="button" href="#myModal" data-toggle="modal"><i class="icon-remove"></i></a>
+          	</td>
+
+        </tr>
+ </tbody>
+
+===============================================================================
 
 Relative Locators(Selenium 4)
 =================================
@@ -617,7 +700,7 @@ Svg element
 Shadow dom
 Broken links
 
-Framework
+Framework Design
 
 
 

@@ -670,14 +670,60 @@ Scenario: For John identify preceding sibling
 
 Relative Locators(Selenium 4)
 =================================
+we use RelativeLocator class
 
+driver.findElement(RelativeLocator.with(By.id("element1")).above(By.id("Element2))).click()
 
+above()
+below()
+near()
+toLeftOf()
+toRightOf()
 =====================================
 
 TestNG class
 ----------------
 
 Dropdown Atomation
+=====================
+1.Select tag based dropdown
+----------------------------------
+For Automating <Select>tag based dropdown we have in Selenium
+Select class and using its method we can automate select based dropdown
+
+create Object of Select class
+Select sc=new Select("address of dropdown");
+
+To check Is dropdown allowed for multiple selection
+----------------------------
+isMultiple()
+
+For single option selection
+--------------------------------
+1.selectByIndex(index)
+2.selectByVisibleText("Text")
+3.selectByValue("value attribute")
+
+To get All options from dropdown we have 
+-------------------------------------------
+getOptions():List<WebElement>
+
+
+
+2.Bootstrap/Javascript/Autosuggestion dropdown
+
+=======================================
+Dynamic Locator
+
+Xpath
+cssSelector
+	
+
+
+
+================================================
+
+
 
 Calendar Automation
 

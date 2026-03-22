@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-22T16:28:25 IST" name="Default suite" finished-at="2026-03-22T16:28:30 IST" duration-ms="4307">
+    <groups>
+    </groups>
+    <test started-at="2026-03-22T16:28:25 IST" name="Default test" finished-at="2026-03-22T16:28:30 IST" duration-ms="4307">
+      <class name="com.WebDriverBasics.Dropdown.Tc26_SelectBasedDropdown_Rediffmail">
+        <test-method signature="testDropdown()[pri:0, instance:com.WebDriverBasics.Dropdown.Tc26_SelectBasedDropdown_Rediffmail@2a65fe7c]" started-at="2026-03-22T16:28:25 IST" name="testDropdown" finished-at="2026-03-22T16:28:30 IST" duration-ms="4255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDropdown -->
+      </class> <!-- com.WebDriverBasics.Dropdown.Tc26_SelectBasedDropdown_Rediffmail -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebDriverBasics.Dropdown.Tc26_SelectBasedDropdown_Rediffmail">
+      <class name="com.WebDriverBasics.Dropdown.Tc32_MakeMyTripAppDropdownAutomation">
         <methods>
           <include name="testDropdown"/>
         </methods>
-      </class> <!-- com.WebDriverBasics.Dropdown.Tc26_SelectBasedDropdown_Rediffmail -->
+      </class> <!-- com.WebDriverBasics.Dropdown.Tc32_MakeMyTripAppDropdownAutomation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

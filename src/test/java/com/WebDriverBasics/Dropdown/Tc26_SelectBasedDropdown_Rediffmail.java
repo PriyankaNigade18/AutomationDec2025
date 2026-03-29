@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-import com.WebDriverBasics.Utility.Utility;
+import com.WebDriverBasics.Utility.ElementUtil;
 
 public class Tc26_SelectBasedDropdown_Rediffmail 
 {
@@ -26,15 +26,15 @@ public class Tc26_SelectBasedDropdown_Rediffmail
 	  
 	  //day
 	  WebElement ddEle=driver.findElement(By.className("day"));
-	  Utility.selectdropdown(ddEle,"06");
+	  ElementUtil.selectdropdown(ddEle,"06");
 	  
 	   //month
 	  WebElement monthEle=driver.findElement(By.className("month"));
-	  Utility.selectdropdown(monthEle,"APR");
+	  ElementUtil.selectdropdown(monthEle,"APR");
 	  
 	  //year
 	  WebElement yearEle=driver.findElement(By.className("year"));
-	  Utility.selectdropdown(yearEle,"2010");
+	  ElementUtil.selectdropdown(yearEle,"2010");
 	  
 	  
 	  /*

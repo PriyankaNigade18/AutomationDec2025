@@ -707,10 +707,36 @@ For single option selection
 To get All options from dropdown we have 
 -------------------------------------------
 getOptions():List<WebElement>
-
-
-
+======================================================
 2.Bootstrap/Javascript/Autosuggestion dropdown
+----------------------------------------------------
+
+solution:best locator strategy(xpath/cssSelector)
+
+=========================================================
+
+How to customize any browser session?
+-------------------------------------
+Capabilities are options that you can use to customize and configure a ChromeDriver session. 
+
+For Every browser we have classes
+chrome---->ChromeOptions
+edge------>EdgeOptions
+firefox---->FirefoOptions
+
+
+how to open incognito window
+--incognito
+
+
+
+
+
+
+
+
+
+
 
 =======================================
 Dynamic Locator

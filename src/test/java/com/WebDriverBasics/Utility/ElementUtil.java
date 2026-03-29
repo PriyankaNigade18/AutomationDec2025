@@ -5,8 +5,9 @@ import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-public class Utility 
+public class ElementUtil 
 {
+	//Utilities are reusable methods
 	public static void selectdropdown(WebElement ele,String value)
 	{
 		Select dd=new Select(ele);

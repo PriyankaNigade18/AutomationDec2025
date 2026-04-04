@@ -722,46 +722,52 @@ Capabilities are options that you can use to customize and configure a ChromeDri
 For Every browser we have classes
 chrome---->ChromeOptions
 edge------>EdgeOptions
-firefox---->FirefoOptions
+firefox---->FirefoxOptions
 
 
 how to open incognito window
 --incognito
 
+To maximize browser session 
+--start-maximized
 
+To get all capabilities
+asMap()
 
+To disable notifications
+--disable-notifications
 
+To run test in headlessmode
+-----------------------------
+Headless is without any browsee/ui
+Fastest driver for headless execution
+----------------
+HTMLUnitDriver(selenium version 3)
+In version 4 we have argument
+--headless 
 
-
-
-
-
-
+Scenario:
+Regression testing
+Faster execution
 
 =======================================
-Dynamic Locator
-
-Xpath
-cssSelector
-	
-
-
-
-================================================
-
-
-
-Calendar Automation
+Calendar/date picker Automation
+----------------------------------
 
 WebTable Automation
+--------------------------
 
 Window Handling
+----------------
 
 Alert 
 
 Frame
 
 Actions class
+
+download  file
+upload file
 
 JavascriptExecutor Interface
 hidden element

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebDriverBasics.Dropdown.Tc32_MakeMyTripAppDropdownAutomation">
+      <class name="com.WebDriverBasics.DatePicker_WebTableAutomation_3.Tc36_CalendarAutomation_RedBus">
         <methods>
-          <include name="testDropdown"/>
+          <include name="automateCalendar"/>
         </methods>
-      </class> <!-- com.WebDriverBasics.Dropdown.Tc32_MakeMyTripAppDropdownAutomation -->
+      </class> <!-- com.WebDriverBasics.DatePicker_WebTableAutomation_3.Tc36_CalendarAutomation_RedBus -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

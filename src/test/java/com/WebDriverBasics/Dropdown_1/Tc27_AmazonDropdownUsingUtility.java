@@ -1,4 +1,4 @@
-package com.WebDriverBasics.Dropdown;
+package com.WebDriverBasics.Dropdown_1;
 
 import java.time.Duration;
 

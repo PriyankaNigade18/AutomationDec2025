@@ -1,4 +1,4 @@
-package com.WebDriverBasics.Dropdown;
+package com.WebDriverBasics.Dropdown_1;
 
 import java.time.Duration;
 
@@ -14,9 +14,7 @@ public class Tc31_GoibiboDropdownAutomation {
   {
 	  
 	  //due to high security while automation it get block so off the firewall private and public network it will work
-	  
-	   
-	  
+	    
 	  WebDriver driver=new ChromeDriver();
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	  driver.get("https://www.goibibo.com/");

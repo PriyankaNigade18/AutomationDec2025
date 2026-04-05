@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-04T16:32:55 IST" name="Default suite" finished-at="2026-04-04T16:33:12 IST" duration-ms="16961">
+  <suite started-at="2026-04-05T16:26:45 IST" name="Default suite" finished-at="2026-04-05T16:26:50 IST" duration-ms="4945">
     <groups>
     </groups>
-    <test started-at="2026-04-04T16:32:55 IST" name="Default test" finished-at="2026-04-04T16:33:12 IST" duration-ms="16961">
-      <class name="com.WebDriverBasics.DatePicker_WebTableAutomation_3.Tc37_DatePickerAutomationPractice">
-        <test-method signature="testDatePicker()[pri:0, instance:com.WebDriverBasics.DatePicker_WebTableAutomation_3.Tc37_DatePickerAutomationPractice@2a65fe7c]" started-at="2026-04-04T16:32:55 IST" name="testDatePicker" finished-at="2026-04-04T16:33:12 IST" duration-ms="16924" status="PASS">
+    <test started-at="2026-04-05T16:26:45 IST" name="Default test" finished-at="2026-04-05T16:26:50 IST" duration-ms="4945">
+      <class name="com.WebDriverBasics.DatePicker_WebTableAutomation_3.Tc39_StaticWebTableAutomation">
+        <test-method signature="testTable()[pri:0, instance:com.WebDriverBasics.DatePicker_WebTableAutomation_3.Tc39_StaticWebTableAutomation@2a65fe7c]" started-at="2026-04-05T16:26:45 IST" name="testTable" finished-at="2026-04-05T16:26:50 IST" duration-ms="4895" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDatePicker -->
-      </class> <!-- com.WebDriverBasics.DatePicker_WebTableAutomation_3.Tc37_DatePickerAutomationPractice -->
+        </test-method> <!-- testTable -->
+      </class> <!-- com.WebDriverBasics.DatePicker_WebTableAutomation_3.Tc39_StaticWebTableAutomation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

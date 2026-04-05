@@ -756,6 +756,43 @@ Calendar/date picker Automation
 
 WebTable Automation
 --------------------------
+Scenario:
+--------------
+Total number of rows
+//table[@name='BookTable']//tbody//tr-----7
+
+Total number of columns
+//table[@name='BookTable']//tbody//tr[2]//td
+
+Total data
+//table[@name='BookTable']//tbody//tr//td
+
+Get any specific row data
+//table[@name='BookTable']//tbody//tr[5]//td
+
+Get any specific column data
+//table[@name='BookTable']//tbody//tr//td[2]
+
+
+1.static webtable
+
+2.Dynamic WebTable
+
+3.Pegination table
+
+JavascriptExecutor
+-------------------------
+JavascriptExecutor is an interface in selenium which is used to run any javascript command
+
+Scenarios
+-----------------
+1.scroll the webpages
+2.Get the title
+3.To refresh webpage
+4.To enter value
+5.To click on element
+6.Automate hidden elements
+
 
 Window Handling
 ----------------

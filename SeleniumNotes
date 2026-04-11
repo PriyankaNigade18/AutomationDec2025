@@ -779,7 +779,7 @@ Get any specific column data
 2.Dynamic WebTable
 
 3.Pegination table
-
+==========================================
 JavascriptExecutor
 -------------------------
 JavascriptExecutor is an interface in selenium which is used to run any javascript command
@@ -792,7 +792,8 @@ Scenarios
 4.To enter value
 5.To click on element
 6.Automate hidden elements
-
+==================================================
+Next Session:
 
 Window Handling
 ----------------
@@ -804,10 +805,8 @@ Frame
 Actions class
 
 download  file
-upload file
 
-JavascriptExecutor Interface
-hidden element
+upload file
 
 Special Scenarios
 ------------------------

@@ -23,7 +23,7 @@ public class Tc39_StaticWebTableAutomation {
 	  driver.get("https://testautomationpractice.blogspot.com/");
 	  
 	  WebElement ele=driver.findElement(By.xpath("//h2[text()='Static Web Table']"));
-	  ElementUtil.scrollUptpElement(driver,ele);
+	  ElementUtil.scrollUptoElement(driver,ele);
 	  
 	  System.out.println("Get the heading and print the heading in console");
 	  List<WebElement> allHeadings=driver.findElements(By.xpath("//table[@name='BookTable']//tbody//tr[1]//th"));
@@ -58,7 +58,30 @@ public class Tc39_StaticWebTableAutomation {
 	  }
 	  
 	  
-	  //get all books price and calculate total
+	  System.out.println("get all books price and calculate total");
+	  
+	  
+	  List<WebElement> allBookPrice=driver.findElements(By.xpath("//table[@name='BookTable']//tbody//tr//td[4]"));
+	  
+	  int total=0;
+	  for(WebElement i:allBookPrice)
+	  {
+		  //i webelement into int
+		 String price= i.getText();
+		 
+		 int numPrice=Integer.parseInt(price);
+		  
+		  total=total+numPrice;
+	  }
+	  
+	  System.out.println("Total Books price is: "+total);
+	  
+	  
+	  
+	  
+	  
+	  
+	  
 	  
   }
 }

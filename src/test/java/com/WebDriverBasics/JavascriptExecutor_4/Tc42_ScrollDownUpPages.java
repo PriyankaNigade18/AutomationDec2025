@@ -30,7 +30,7 @@ public class Tc42_ScrollDownUpPages {
 	  Thread.sleep(2000);
 	  WebElement ele=driver.findElement(By.xpath("//span[text()='Best Sellers in Beauty']"));
 
-	  ElementUtil.scrollUptpElement(driver,ele);
+	  ElementUtil.scrollUptoElement(driver,ele);
 	  
 	  
 	  /*

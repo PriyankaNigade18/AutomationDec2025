@@ -51,7 +51,7 @@ public class ElementUtil
 	}
 
 	
-	public static void scrollUptpElement(WebDriver driver,WebElement ele)
+	public static void scrollUptoElement(WebDriver driver,WebElement ele)
 	{
 		JavascriptExecutor js=(JavascriptExecutor) driver;
 	  js.executeScript("arguments[0].scrollIntoView(true);",ele);

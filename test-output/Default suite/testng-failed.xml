@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebDriverBasics.DatePicker_WebTableAutomation_3.Tc36_CalendarAutomation_RedBus">
+      <class name="com.WebDriverBasics.JavascriptExecutor_4.Tc44_HiddenElementAutomation">
         <methods>
-          <include name="automateCalendar"/>
+          <include name="testHiddenElement"/>
         </methods>
-      </class> <!-- com.WebDriverBasics.DatePicker_WebTableAutomation_3.Tc36_CalendarAutomation_RedBus -->
+      </class> <!-- com.WebDriverBasics.JavascriptExecutor_4.Tc44_HiddenElementAutomation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

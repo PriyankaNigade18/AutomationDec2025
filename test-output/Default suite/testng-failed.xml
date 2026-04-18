@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebDriverBasics.JavascriptExecutor_4.Tc44_HiddenElementAutomation">
+      <class name="com.WebDriverBasics.windowhandling5.Tc48_NewTab_NewWindow">
         <methods>
-          <include name="testHiddenElement"/>
+          <include name="testTabWindow"/>
         </methods>
-      </class> <!-- com.WebDriverBasics.JavascriptExecutor_4.Tc44_HiddenElementAutomation -->
+      </class> <!-- com.WebDriverBasics.windowhandling5.Tc48_NewTab_NewWindow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

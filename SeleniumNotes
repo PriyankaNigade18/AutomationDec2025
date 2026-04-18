@@ -87,8 +87,8 @@ Selenium WebDriver Browser Commands
 
 Window Handling
 ---------------
-5.getWindowHandle()
-6.getWindowHandles()
+5.getWindowHandle(): get the session id for current focus window
+6.getWindowHandles():get the all windows session id
 
 7.close(): close active browser window
 8.quit(): close all open browser windows by selenium
@@ -793,11 +793,24 @@ Scenarios
 5.To click on element
 6.Automate hidden elements
 ==================================================
-Next Session:
-
+18-04-2026
+===================
 Window Handling
 ----------------
+getWindowHandle(): get the session id for current focus window
+getWindowHandles():get the all windows session id
+switchTo(): switch to target(window/alert/frame)
 
+How to open new application into new tab/window
+-----------------------------------------
+here selenium 4 provides new method: newWindow()
+newWindow() returns WebDriver interface object
+
+
+driver.switchTo().newWindow(WindowType.Tab);
+driver.switchTo().newWindow(WindowType.WINDOW);
+
+=====================================================
 Alert 
 
 Frame

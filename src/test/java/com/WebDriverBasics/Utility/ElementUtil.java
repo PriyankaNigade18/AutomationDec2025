@@ -58,4 +58,60 @@ public class ElementUtil
 
 		
 	}
+	
+	
+	//utilities for multiple windows
+	public static void switchToSpecificWindow(WebDriver driver,List<String> allWindows,String title)
+	{
+		for(String childWindow:allWindows)//[101,102,103]
+		  {
+			String appTitle=driver.switchTo().window(childWindow).getTitle();
+		  if(appTitle.contains(title))
+		  {
+			  
+			  System.out.println("Found right window");
+			  System.out.println("Current url is: "+driver.getCurrentUrl());
+			  System.out.println("Title is: "+driver.getTitle());
+			  break;
+		  }
+		  
+		   }
+	}
+	
+	
+	
+	public static WebDriver switchToParentWindow(WebDriver driver,String parentId)
+	{
+		driver.switchTo().window(parentId);
+		return driver;
+	}
+	
+	//close only child windows
+	
+	public static void closeChildWindows(WebDriver driver,List<String> allWindows,String parentWindow)
+	{
+		for(String childWindow:allWindows)
+		{
+			if(!parentWindow.equals(childWindow))
+			{
+				//child window
+				driver.switchTo().window(childWindow).close();
+				
+			}
+		}
+		
+	}
+	
+	public static void closeAllWindows(WebDriver driver,List<String> allWindows)
+	{
+		for(String childWindow:allWindows)
+		{
+				//child window
+				driver.switchTo().window(childWindow).close();
+				
+			
+		}
+		
+	}
+	
 }

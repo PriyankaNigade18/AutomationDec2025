@@ -77,6 +77,12 @@ so that case you will get staleElementReferenceException
 4.InvalidSelectorException: Compound class names not permitted
 When we identify webelement with multiple classname then this exception will throw by selenium
 
+5.UnhandledAlertException: unexpected alert open: {Alert text : Please enter your password}
+When we missed to handle any alert then this exception occur
+
+6.NoSuchFrameException: no such frame
+If frame not found then you will get the exception
+
 
 Selenium WebDriver Browser Commands
 ======================================
@@ -811,12 +817,74 @@ driver.switchTo().newWindow(WindowType.Tab);
 driver.switchTo().newWindow(WindowType.WINDOW);
 
 =====================================================
-Alert 
+Alert/popup 
+==============
+-Alert/popup is any javascript confirmation window 
+-In Selenium Alerts can automate using Alert Interface
+-We can switch current focus of webdriver to alert window
+	and Using Alert interface we can handle any alert
+-alert() returns Alert interface Object
 
-Frame
+	driver.switchTo().alert();
 
+Types
+------------
+1.Simple alert(Ok)
+2.Confirmation alert(OK+Cancel)
+3.Prompt alert
+
+Alert interface has 4 methods
+--------------------------------
+1.getText(): to get the text of alert
+2.accept(): simulate action of ok button
+3.dismiss():Simulate action of cancel button
+4.sendkeys(): Prompt alert
+
+
+
+How to automate any authentication popup
+==========================================
+Authentication popup will ask user to enter credentials
+Syntax:
+----------------
+https://unsername:password@domain.com/path
+
+https://admin:admin@the-internet.herokuapp.com/basic_auth
+
+==================================================
+iframe/frame automation
+-------------------------------
+One html document embedded inside another html document is called frame/iframe
+iframe: inline frame
+
+<iframe> or <frame>
+
+3Ways
+--------------
+driver.switchTo().frame(index)
+driver.switchTo().frame(id/name)
+driver.switchTo().frame(frameWebElement)
+
+To reach main document where all frames are present
+driver.switchTo().defaultContent()
+Selects either the first frame on the page, or the main document when a page containsiframes. 
+==============================================
 Actions class
+===============
+We can automate any mouse operation
 
+1.rightclick
+2.doubleclick
+3.mouseHover
+4.drag n drop
+5.slider
+6.resize
+7.tooltip
+
+Note:
+If single action it is then use perform()
+If multiple action are there on webelement then use build().perform()
+====================================
 download  file
 
 upload file
@@ -827,7 +895,16 @@ Svg element
 Shadow dom
 Broken links
 
+TestNG framework
+======================
 Framework Design
+Devops
+
+Cucumber
+
+Api Testing
+
+
 
 
 

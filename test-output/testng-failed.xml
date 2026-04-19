@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebDriverBasics.windowhandling5.Tc48_NewTab_NewWindow">
+      <class name="com.WebDriverBasics.Alerts_FrameAutomation6.Tc53_FrameWithNestedFrames">
         <methods>
-          <include name="testTabWindow"/>
+          <include name="testFrames"/>
         </methods>
-      </class> <!-- com.WebDriverBasics.windowhandling5.Tc48_NewTab_NewWindow -->
+      </class> <!-- com.WebDriverBasics.Alerts_FrameAutomation6.Tc53_FrameWithNestedFrames -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

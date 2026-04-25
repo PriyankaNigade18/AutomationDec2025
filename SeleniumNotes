@@ -873,14 +873,21 @@ Actions class
 ===============
 We can automate any mouse operation
 
-1.rightclick
-2.doubleclick
-3.mouseHover
-4.drag n drop
-5.slider
-6.resize
-7.tooltip
-
+1.rightclick : contextClick()
+2.doubleclick: doubleClick()
+3.mouseHover: moveToElement()
+4.drag n drop: dragAndDrop(src,target)
+5.slider: act.clickAndHold(sliderEle).moveToElement(sliderEle,200,0).build().perform();
+6.resize: act.moveToElement(ele).dragAndDropBy(ele,80,50).build().perform();
+7.tooltip: hack
+------------------------
+To make element visible
+-----------------------------
+1. ctrl+shift+p-->this opens run command window --->focus--->Emulate focus page
+2. pause app in debug mode
+	goto devtool--->source-->inspect element or highlight that element and then 
+	press ctrl+\ this will pause the screen and then you can identify element address
+	
 Note:
 If single action it is then use perform()
 If multiple action are there on webelement then use build().perform()
@@ -888,6 +895,10 @@ If multiple action are there on webelement then use build().perform()
 download  file
 
 upload file
+------------------
+1.type="file"---> sendKeys("filePath")
+2.Robot class(Java)
+
 
 Special Scenarios
 ------------------------

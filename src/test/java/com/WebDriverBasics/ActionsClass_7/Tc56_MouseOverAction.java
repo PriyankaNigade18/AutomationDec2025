@@ -1,0 +1,50 @@
+package com.WebDriverBasics.ActionsClass_7;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+public class Tc56_MouseOverAction {
+  @Test
+  public void testMouseHover() 
+  {
+	  
+	  //create driver session
+	  WebDriver driver=new ChromeDriver();
+	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	  driver.get("https://www.naukri.com/");
+	  
+	  //ele
+	  WebElement ele=driver.findElement(By.xpath("//span[text()='Jobs']"));
+	  
+	  //action
+	  Actions act=new Actions(driver);
+	  act.moveToElement(ele).perform();
+	  
+	  List<WebElement> allOptions=driver.findElements(By.xpath("//div[contains(@class,'nI-gNb-Jobs')]//ul//li//a"));
+	  System.out.println("Total options are: "+allOptions.size());
+	  
+	  for(WebElement i:allOptions)
+	  {
+		  System.out.println(i.getText());
+	  }
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+  }
+}

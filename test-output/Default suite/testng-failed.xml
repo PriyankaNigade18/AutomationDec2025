@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebDriverBasics.Alerts_FrameAutomation6.Tc53_FrameWithNestedFrames">
+      <class name="com.WebDriverBasics.ActionsClass7.Tc60_ResizableAutomation">
         <methods>
-          <include name="testFrames"/>
+          <include name="testResizeOfElement"/>
         </methods>
-      </class> <!-- com.WebDriverBasics.Alerts_FrameAutomation6.Tc53_FrameWithNestedFrames -->
+      </class> <!-- com.WebDriverBasics.ActionsClass7.Tc60_ResizableAutomation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

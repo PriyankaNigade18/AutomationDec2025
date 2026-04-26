@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebDriverBasics.ActionsClass7.Tc60_ResizableAutomation">
+      <class name="com.WebDriverBasics.SpecialScenarios_8.Tc64_FileDownloadScenario">
         <methods>
-          <include name="testResizeOfElement"/>
+          <include name="testFileDownload"/>
         </methods>
-      </class> <!-- com.WebDriverBasics.ActionsClass7.Tc60_ResizableAutomation -->
+      </class> <!-- com.WebDriverBasics.SpecialScenarios_8.Tc64_FileDownloadScenario -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

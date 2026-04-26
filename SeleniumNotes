@@ -898,11 +898,32 @@ upload file
 ------------------
 1.type="file"---> sendKeys("filePath")
 2.Robot class(Java)
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 
+//copy file(Clipboard action: Ctrl+c)
+	  StringSelection sc=new StringSelection("filepath");
+	  Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sc,null);
 
 Special Scenarios
 ------------------------
 Svg element
+=================
+SVG (Scalable Vector Graphics) is an XML-based file format for 2D vector graphics that supports interactivity and animation. 
+- In selenium we can not automate using basic locator svg element
+
+Syntax:
+==============
+//*[local-name()='svg']
+OR
+//*[name()='svg']
+
+
+Next Session......
+
 Shadow dom
 Broken links
 

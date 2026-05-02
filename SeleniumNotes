@@ -925,7 +925,100 @@ OR
 Next Session......
 
 Shadow dom
+===============
+Shadow DOM ele
+========================
+what is Shadow DOM?
+----------------------
+Whenever DOM is loaded inside another DOM is called Shadow DOM
+
+Logic
+----------
+main document-->shadow host-->shadow root-->shadow ele
+
+
+Which element we can called as shadow element?
+----------------------------------------
+if element is designed with #shadow-root(open) then that 
+element is shadow ele
+
+Parent tag/element for shadow element is shadow root
+Parent tag/element for shadow root is shadow host
+
+Shadow dom elements we can automate only using cssSelector
+
+If element design with #shadow-root(closed) we can not automate this element
+
+=====================================
 Broken links
+-----------------------
+
+If the link status code if it is 400 and greater than 400 is broken
+
+If link contains href attribute value as null or empty then such link we can not automate
+
+
+1.link should have href attribute and it should not empty or null
+2.only valid link request we can send to the server
+3.get status code from server and validate it
+
+Wait strategy
+---------------------
+default wait timeout
+-----------------------
+1.PageLoad default timeout:300000ms=5mins
+2.Implicit Wait: default timeout is 0
+3.Script timeout:script=30000 30sec
+4.Polling timeout: 0.5 sec
+
+driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(10));
+driver.manage().timeouts().scriptTimeout(Duration.ofMinutes(1));
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+Synchronization Issue
+============================
+Tool always execute faster than application
+Sometimes application need extra time to load webelement and then it creates
+time mapping issue in between application and tool, that is called Synchronization issue in selenium
+
+How to handle it?
+-------------------------
+Selenium provides two dynamic waits
+
+1.Implicit Wait
+-------------------
+-Implicit wait is applicable for all webelements
+-It is called Global wait
+- Apply implicit wait after driver session creates
+
+syntax
+----------
+driver.manage().timeout().implicitlyWait(Duration.ofSeconds(10));
+
+If element needs load time is 7sec and implicit wait=10sec then 
+as this is dynamic remaining 3sec selenium will not wait it will continue with
+next element
+
+
+
+2.Explicit Wait
+-----------------------
+-Explicit wait applicable for single webelement
+-Explicit wait we can apply based on conditions
+
+	we use two classes to achieve this wait
+	1.WebDriverWait(c)
+	2.FluentWait(c)
+	
+	WebDriverWait(c) extends Fluentwait(c) implements Wait(I)
+
+
+
+
+
+
+
+
 
 TestNG framework
 ======================

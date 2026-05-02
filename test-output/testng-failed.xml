@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebDriverBasics.SpecialScenarios_8.Tc64_FileDownloadScenario">
+      <class name="com.WebDriverBasics.WaitsInSelenium9.Tc69_ExplicitWaitUsingWebDriverWaitDemo1">
         <methods>
-          <include name="testFileDownload"/>
+          <include name="testWait"/>
         </methods>
-      </class> <!-- com.WebDriverBasics.SpecialScenarios_8.Tc64_FileDownloadScenario -->
+      </class> <!-- com.WebDriverBasics.WaitsInSelenium9.Tc69_ExplicitWaitUsingWebDriverWaitDemo1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,5 +1,7 @@
 package com.WebDriverBasics;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -13,6 +15,8 @@ public class Tc2_WebDriverBrowserCommands {
 		//driver session for chrome
 		WebDriver driver=new ChromeDriver();
 		
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(10));
+		driver.manage().timeouts().scriptTimeout(Duration.ofMinutes(1));
 		//open application
 		driver.get("https://automationplayground.com/crm/");
 		

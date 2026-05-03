@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebDriverBasics.WaitsInSelenium9.Tc69_ExplicitWaitUsingWebDriverWaitDemo1">
+      <class name="com.TestNG.Basics1.Tc77_Dependency">
         <methods>
-          <include name="testWait"/>
+          <include name="startBrowser"/>
+          <include name="findElement"/>
+          <include name="openApplication"/>
         </methods>
-      </class> <!-- com.WebDriverBasics.WaitsInSelenium9.Tc69_ExplicitWaitUsingWebDriverWaitDemo1 -->
+      </class> <!-- com.TestNG.Basics1.Tc77_Dependency -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

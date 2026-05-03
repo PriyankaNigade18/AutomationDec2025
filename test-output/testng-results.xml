@@ -1,42 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="1" total="20" passed="16" failed="2" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-02T16:22:54 IST" name="Default suite" finished-at="2026-05-02T16:23:03 IST" duration-ms="8321">
+  <suite started-at="2026-05-03T16:17:21 IST" name="Suite" finished-at="2026-05-03T16:17:38 IST" duration-ms="16680">
     <groups>
     </groups>
-    <test started-at="2026-05-02T16:22:54 IST" name="Default test" finished-at="2026-05-02T16:23:03 IST" duration-ms="8321">
-      <class name="com.WebDriverBasics.WaitsInSelenium9.Tc69_ExplicitWaitUsingWebDriverWaitDemo1">
-        <test-method signature="testWait()[pri:0, instance:com.WebDriverBasics.WaitsInSelenium9.Tc69_ExplicitWaitUsingWebDriverWaitDemo1@2a65fe7c]" started-at="2026-05-02T16:22:54 IST" name="testWait" finished-at="2026-05-02T16:23:03 IST" duration-ms="8273" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+    <test started-at="2026-05-03T16:17:21 IST" name="Test" finished-at="2026-05-03T16:17:38 IST" duration-ms="16680">
+      <class name="com.TestNG.Basics1.TC73_Priorityparameter">
+        <test-method signature="registerTest()[pri:1, instance:com.TestNG.Basics1.TC73_Priorityparameter@368f2016]" started-at="2026-05-03T16:17:30 IST" name="registerTest" finished-at="2026-05-03T16:17:30 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method signature="loginTest()[pri:2, instance:com.TestNG.Basics1.TC73_Priorityparameter@368f2016]" started-at="2026-05-03T16:17:30 IST" name="loginTest" finished-at="2026-05-03T16:17:30 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="searchTest()[pri:3, instance:com.TestNG.Basics1.TC73_Priorityparameter@368f2016]" started-at="2026-05-03T16:17:30 IST" name="searchTest" finished-at="2026-05-03T16:17:30 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method signature="addToCartTest()[pri:4, instance:com.TestNG.Basics1.TC73_Priorityparameter@368f2016]" started-at="2026-05-03T16:17:30 IST" name="addToCartTest" finished-at="2026-05-03T16:17:30 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTest -->
+      </class> <!-- com.TestNG.Basics1.TC73_Priorityparameter -->
+      <class name="com.TestNG.Basics1.Tc75_TimeOutParameter">
+        <test-method signature="register()[pri:1, instance:com.TestNG.Basics1.Tc75_TimeOutParameter@692f203f]" started-at="2026-05-03T16:17:30 IST" name="register" finished-at="2026-05-03T16:17:34 IST" duration-ms="4013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method signature="login()[pri:2, instance:com.TestNG.Basics1.Tc75_TimeOutParameter@692f203f]" started-at="2026-05-03T16:17:34 IST" name="login" finished-at="2026-05-03T16:17:37 IST" duration-ms="3018" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for presence of element found by By.id: input-email####
-(tried for 5 seconds with 500 milliseconds interval)
-Build info: version: '4.40.0', revision: 'b3333f1'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\piyun\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55095}, goog:processID: 10640, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55095/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 836f27045fd1c67a1763b0f250270616]]>
+              <![CDATA[Method com.TestNG.Basics1.Tc75_TimeOutParameter.login() didn't finish within the time-out 3000]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element found by By.id: input-email####
-(tried for 5 seconds with 500 milliseconds interval)
-Build info: version: '4.40.0', revision: 'b3333f1'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\piyun\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55095}, goog:processID: 10640, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55095/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 836f27045fd1c67a1763b0f250270616
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at com.WebDriverBasics.WaitsInSelenium9.Tc69_ExplicitWaitUsingWebDriverWaitDemo1.testWait(Tc69_ExplicitWaitUsingWebDriverWaitDemo1.java:32)
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method com.TestNG.Basics1.Tc75_TimeOutParameter.login() didn't finish within the time-out 3000
+at java.base/java.lang.Thread.sleep0(Native Method)
+at java.base/java.lang.Thread.sleep(Thread.java:509)
+at com.TestNG.Basics1.Tc75_TimeOutParameter.login(Tc75_TimeOutParameter.java:17)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- com.TestNG.Basics1.Tc75_TimeOutParameter -->
+      <class name="com.TestNG.Basics1.Tc72_FirstTestCase">
+        <test-method signature="firefoxTest()[pri:1, instance:com.TestNG.Basics1.Tc72_FirstTestCase@3023df74]" started-at="2026-05-03T16:17:21 IST" name="firefoxTest" description="test execution on Firefox" finished-at="2026-05-03T16:17:26 IST" duration-ms="5112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firefoxTest -->
+        <test-method signature="chromeTest()[pri:2, instance:com.TestNG.Basics1.Tc72_FirstTestCase@3023df74]" started-at="2026-05-03T16:17:26 IST" name="chromeTest" description="test execution on chrome" finished-at="2026-05-03T16:17:30 IST" duration-ms="3342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chromeTest -->
+      </class> <!-- com.TestNG.Basics1.Tc72_FirstTestCase -->
+      <class name="com.TestNG.Basics1.Tc74_InvocationCount">
+        <test-method signature="registerTest()[pri:1, instance:com.TestNG.Basics1.Tc74_InvocationCount@48f2bd5b]" started-at="2026-05-03T16:17:37 IST" name="registerTest" finished-at="2026-05-03T16:17:37 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method signature="loginTest()[pri:2, instance:com.TestNG.Basics1.Tc74_InvocationCount@48f2bd5b]" started-at="2026-05-03T16:17:37 IST" name="loginTest" finished-at="2026-05-03T16:17:37 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest()[pri:2, instance:com.TestNG.Basics1.Tc74_InvocationCount@48f2bd5b]" started-at="2026-05-03T16:17:37 IST" name="loginTest" finished-at="2026-05-03T16:17:37 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest()[pri:2, instance:com.TestNG.Basics1.Tc74_InvocationCount@48f2bd5b]" started-at="2026-05-03T16:17:37 IST" name="loginTest" finished-at="2026-05-03T16:17:37 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="logoutTest()[pri:3, instance:com.TestNG.Basics1.Tc74_InvocationCount@48f2bd5b]" started-at="2026-05-03T16:17:37 IST" name="logoutTest" finished-at="2026-05-03T16:17:37 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+      </class> <!-- com.TestNG.Basics1.Tc74_InvocationCount -->
+      <class name="com.TestNG.Basics1.Tc76_ExcludeTestusingparameter">
+        <test-method signature="registerTest()[pri:1, instance:com.TestNG.Basics1.Tc76_ExcludeTestusingparameter@4c583ecf]" started-at="2026-05-03T16:17:30 IST" name="registerTest" finished-at="2026-05-03T16:17:30 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method signature="loginTest()[pri:2, instance:com.TestNG.Basics1.Tc76_ExcludeTestusingparameter@4c583ecf]" started-at="2026-05-03T16:17:30 IST" name="loginTest" finished-at="2026-05-03T16:17:30 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="searchTest()[pri:3, instance:com.TestNG.Basics1.Tc76_ExcludeTestusingparameter@4c583ecf]" started-at="2026-05-03T16:17:30 IST" name="searchTest" finished-at="2026-05-03T16:17:30 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+      </class> <!-- com.TestNG.Basics1.Tc76_ExcludeTestusingparameter -->
+      <class name="com.TestNG.Basics1.Tc77_Dependency">
+        <test-method signature="startBrowser()[pri:1, instance:com.TestNG.Basics1.Tc77_Dependency@1aafa419]" started-at="2026-05-03T16:17:37 IST" name="startBrowser" finished-at="2026-05-03T16:17:37 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="openApplication()[pri:2, instance:com.TestNG.Basics1.Tc77_Dependency@1aafa419]" started-at="2026-05-03T16:17:37 IST" name="openApplication" finished-at="2026-05-03T16:17:38 IST" depends-on-methods="com.TestNG.Basics1.Tc77_Dependency.startBrowser" duration-ms="1006" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method com.TestNG.Basics1.Tc77_Dependency.openApplication() didn't finish within the time-out 1000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method com.TestNG.Basics1.Tc77_Dependency.openApplication() didn't finish within the time-out 1000
+at java.base/java.lang.Thread.sleep0(Native Method)
+at java.base/java.lang.Thread.sleep(Thread.java:509)
+at com.TestNG.Basics1.Tc77_Dependency.openApplication(Tc77_Dependency.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="findElement()[pri:3, instance:com.TestNG.Basics1.Tc77_Dependency@1aafa419]" started-at="2026-05-03T16:17:38 IST" name="findElement" finished-at="2026-05-03T16:17:38 IST" depends-on-methods="com.TestNG.Basics1.Tc77_Dependency.openApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.TestNG.Basics1.Tc77_Dependency.findElement() on instance com.TestNG.Basics1.Tc77_Dependency@1aafa419 depends on not successfully finished methods 
+[com.TestNG.Basics1.Tc77_Dependency.openApplication() on instance com.TestNG.Basics1.Tc77_Dependency@1aafa419]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.TestNG.Basics1.Tc77_Dependency.findElement() on instance com.TestNG.Basics1.Tc77_Dependency@1aafa419 depends on not successfully finished methods 
+[com.TestNG.Basics1.Tc77_Dependency.openApplication() on instance com.TestNG.Basics1.Tc77_Dependency@1aafa419]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
@@ -57,11 +163,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testWait -->
-      </class> <!-- com.WebDriverBasics.WaitsInSelenium9.Tc69_ExplicitWaitUsingWebDriverWaitDemo1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- findElement -->
+      </class> <!-- com.TestNG.Basics1.Tc77_Dependency -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

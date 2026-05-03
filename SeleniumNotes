@@ -1012,17 +1012,88 @@ next element
 	
 	WebDriverWait(c) extends Fluentwait(c) implements Wait(I)
 
-
-
-
-
-
-
-
-
+==============================================================
 TestNG framework
 ======================
-Framework Design
+In TestNg class we can add multiple test cases
+All test cases executes in alphabetical order
+
+1.priority: to execute test cases in sequence
+2.description: to add description about test cases
+3.invocationCount:to run test cases as per count
+4.timeout:The maximum number of milliseconds this test should take.
+
+5.How to exclude any test case from current execution
+-----------------------------
+1. enabled=false
+2.using xml file with the help of exclude methods
+
+
+
+
+
+Method include/exclude + groups we will continue in next class.....
+
+
+
+
+
+
+
+
+
+
+6.dependsOnMethod:this parameter provide dependency in between test
+
+
+How to create suite in Selenium
+-----------------------------------
+Test Suite is collection of collection
+
+Solution: 
+Using testng framework where we can create xml file
+and create suite
+
+rightclick on package-->TestNG--->convertToTestNG
+
+What testng.xml file
+--------------------------
+This is configuration file for testNg project
+-using xml we can create test suite
+-we can exclude/include test for execution
+- we can group the test cases
+- we can do parallel testing...etc
+
+<suite>
+<test>
+<classes>
+<class name=Tc77DependencyTest >
+<method name="startBrowser"/>   @test=method in testng
+<method name="openApplication/>
+<method name="findElement/>
+</class>
+</classes>
+</test>
+</suite>
+-----------------------------------------------------------
+Annotations
+Assertions
+
+
+Test Data
+-------------
+1.using xml 
+2.using properties file
+
+
+Data driven testing
+
+Page object model
+
+
+Framework design
+
+
 Devops
 
 Cucumber

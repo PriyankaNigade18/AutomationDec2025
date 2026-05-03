@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.TestNG.Basics1.Tc72_FirstTestCase"/>
+      <class name="com.TestNG.Basics1.TC73_Priorityparameter"/>
+      <class name="com.TestNG.Basics1.Tc76_ExcludeTestusingparameter"/>
+      <class name="com.TestNG.Basics1.Tc75_TimeOutParameter"/>
+      <class name="com.TestNG.Basics1.Tc74_InvocationCount"/>
+      <class name="com.TestNG.Basics1.Tc77_Dependency"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -23,7 +23,7 @@ public class Tc55_DoubleClickAction {
 	  Actions act=new Actions(driver);
 	  act.doubleClick(buttonEle).perform();
 	  
-	  Thread.sleep(2000);
+	  //Thread.sleep(2000);
 	  
 	  //alert
 	  Alert alt=driver.switchTo().alert();
